@@ -1,7 +1,8 @@
 import React from "react";
 import './Main.css';
+import DailyPlan from './DailyPlan';
 
-export class Main extends React.Component {
+export default class Main extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
@@ -9,7 +10,9 @@ export class Main extends React.Component {
 
         render(){
             return(
-                <div>Main component</div>
+                <div>
+                    <DailyPlan/>
+                </div>
             )
         }
 }
