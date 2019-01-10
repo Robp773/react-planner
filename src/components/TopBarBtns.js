@@ -1,5 +1,7 @@
 import React from "react";
-import './TopBarBtns.css';
+import './sass/_TopBarBtns.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 export default class TopBarBtns extends React.Component {
     constructor(props) {
@@ -12,8 +14,15 @@ export default class TopBarBtns extends React.Component {
             let buttonSets = {
                 dailyPlan: (
                     <div>
-                        <button>Weekly Progress</button>
-                        <button>Weekly Plan</button>
+
+                        <button className='navBtn'>
+                            <FontAwesomeIcon className='faIcon navIcon' icon="map" />
+                        </button>
+
+                        <button className='navBtn'>
+                            <FontAwesomeIcon className='faIcon navIcon' icon="calendar-week" />
+                        </button>
+
                     </div>
                 ),
                 weeklyPlan: (
@@ -34,10 +43,10 @@ export default class TopBarBtns extends React.Component {
                 )
         }
 
-        let currentBtns = buttonSets[this.props.buttonSet];
+            let currentBtns = buttonSets[this.props.buttonSet];
             return(
 
-                <div class='topBarBtns'>
+                <div className='topBarBtns'>
                    {currentBtns}
                 </div>
                 
