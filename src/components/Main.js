@@ -1,6 +1,7 @@
 import React from "react";
-import './Main.css';
+import './sass/_Main.scss';
 import DailyPlan from './DailyPlan';
+
 
 export default class Main extends React.Component {
     constructor(props) {
