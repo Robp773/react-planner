@@ -1,6 +1,7 @@
 import React from "react";
-import './DailyPlan.css';
+import './sass/_DailyPlan.scss';
 import TopBar from './TopBar';
+
 
 export default class DailyPlan extends React.Component {
     constructor(props) {
@@ -10,9 +11,9 @@ export default class DailyPlan extends React.Component {
 
         render(){
             return(
-                <div class='dailyPlan'>
-
-                    <TopBar title='Daily Plan' buttonSet='dailyPlan'/>
+                <div className='dailyPlan'>
+                    <TopBar title='Daily Plan' buttonSet='dailyPlan' dateShown='today'/>
+                    <h2>Primary Task</h2>
 
                 </div>
             )
