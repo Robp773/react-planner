@@ -1,15 +1,30 @@
+.dailyPlan {
+  min-height: 100vh;
+  width: 100vw; }
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 body {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 ::-webkit-scrollbar {
-  display: none;
-}
+  display: none; }
+
+.topBar {
+  border-bottom: 1px solid black; }
+
+.topBar-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px auto; }
+
+.navBtn {
+  padding: .75rem 1rem;
+  border: 0;
+  margin: auto 2px; }
